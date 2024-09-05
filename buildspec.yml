@@ -3,7 +3,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - docker build -t helloworld.
+      - docker build -t helloworld .
   build:
     commands:
       - docker images
