@@ -7,4 +7,6 @@ phases:
   build:
     commands:
       - docker images
-      - docker run helloworld echo "Hello, World!"
+      - docker run -d -p 8000:8000 helloworld
+      - sleep 10
+      - curl http://localhost:8000
